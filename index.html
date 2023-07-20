@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Map and Set</title>
+</head>
+<body>
+    <hr><h1>Problem statement</h1><hr>
+    <h2><span>Q.1:-</span>you are given a string(STR) of length N.consisting of only
+        the lower case English alphabet Your task is to remove all the duplicate
+        occurences of character in the string;
+        <br>
+        <br>
+        Input:abcadeecfb 
+        <br>
+        Output:abcdef
+    </h2>
+
+        <pre>
+            ANS:- 
+            const str="abcadeecfb";
+
+            const setStr=new Set(str);
+
+            for(var alphabet of setStr)
+          {
+              console.log(...setStr);
+          }
+        </pre>
+        <hr>
+    
+    <h2><span>Q.2:-</span>You are given a string(STR) of length N ,you have to print
+        the count of the all alphabet .(using map)
+        <br>
+        <br>
+        Input:abcadeecfb 
+        <br>
+        Output: 
+        <br>
+        a=2
+        <br>
+        b=2
+        <br>
+        c=2
+        <br>
+        d=1
+        <br>
+        e=2
+        <br>
+        f=1
+    </h2>
+    <p>ANS:- here i am using map function and convert in to string
+        and use  inhanse for loop.</p>
+        <pre>
+            var str1="abcadeecfb";
+            const mapon=new Map();
+
+             for(var alphabet1 of str1)
+             {
+                 if(mapon.has(alphabet1))
+              {
+                   mapon.set(alphabet1,mymap.get(alphabet1)+1);
+              }
+               else
+              {
+                  mapon.set(alphabet1,1);
+              }
+            }
+               console.log(mapon);
+        </pre>
+    
+    <hr>
+</body>
+<script src="./script.js"></script>
+</html>
